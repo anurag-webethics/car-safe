@@ -27,7 +27,6 @@ if (
             $emailErr = "Email already exist";
         } elseif (mysqli_query($conn, $sql) === TRUE) {
             $_SESSION['success_message'] = '1';
-
             header("Location:login.php");
         }
     }

@@ -42,7 +42,7 @@
           <?php } ?>
 
           <?php if (!empty($_SESSION['email'])) { ?>
-            <a href="../profile_view.php" class="link-light link-offset-2 link-underline-opacity-0"><button type="button" class="btn rounded-0 text-white profile nav-btn"><i class="fa-solid fa-user" style="color: #ffffff;"></i> Profile</button></a>
+            <a href="./profile_view.php" class="link-light link-offset-2 link-underline-opacity-0"><button type="button" class="btn rounded-0 text-white profile nav-btn"><i class="fa-solid fa-user" style="color: #ffffff;"></i> Profile</button></a>
             <a href="./auth/logout.php" class="link-light link-offset-2 link-underline-opacity-0"><button type="button" class="btn rounded-0 text-white login nav-btn">Logout</button></a>
           <?php } ?>
 
@@ -62,6 +62,3 @@
     }
   </script>
 
-</body>
-
-</html>

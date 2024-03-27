@@ -10,7 +10,7 @@ $title = 'Album';
 
 <div class="center">
     <div class="container my-5 py-5 border rounded-4">
-        <form action="" method="POST">
+        <form action="" method="POST" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label fs-6 fw-semibold">Album Name</label>
                 <input type="text" name="albumName" class="form-control bg-body-tertiary py-3 ps-3 fs-6 " id="exampleInput" placeholder="Enter Your Album Name">

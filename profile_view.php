@@ -9,7 +9,7 @@ $userDetail = getUserDetails($conn);
 
 include('./partials/indexheader.php');
 
-include('./partials/hero_banner.php');
+include('./partials/hero-banner.php');
 
 $userProfileImg = getUserProfileImg($conn);
 // dd($userProfileImg);
@@ -23,7 +23,7 @@ $userProfileImg = getUserProfileImg($conn);
 
         <div class="col-sm-6 col-md-12 col-lg-5 mb-3 mb-sm-0 detail-row">
             <div class="card bg-body-tertiary d-flex justify-content-center align-items-center py-5 h-100">
-                <img src="./assets/images/profile-images/<?php echo $userProfileImg['profile_img']; ?>" alt="" class="rounded-circle" width="40%">
+                <img src="./assets/images/profile-images/<?php echo $userDetail['profile_img']; ?>" alt="" class="rounded-circle" width="40%">
                 <div class="card-body text-center">
                     <h2 class="text-dark fw-semibold"><?php echo $userDetail['fname'] . $userDetail['lname'] ?></h2>
                     <p class="fw-bold fs-5">Email- <?php echo $userDetail['email'] ?></p>

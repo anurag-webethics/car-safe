@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-
-  <div class="container-fluid footer ">
+<div class="container-fluid footer ">
     <div class="container pt-4">
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5">
         <div class="col mb-3">
@@ -30,10 +19,10 @@
 
             <li class="nav-item mb-2"><a href="./index.php" class="nav-link p-0 text-body-secondary">Home</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
-            <li class="nav-item mb-2"><a href="./add_images/images.php" class="nav-link p-0 text-body-secondary">Buy a
+            <li class="nav-item mb-2"><a href="../controller/images.php" class="nav-link p-0 text-body-secondary">Buy a
                 car</a>
             </li>
-            <li class="nav-item mb-2"><a href="./add_images/album.php" class="nav-link p-0 text-body-secondary">Sell a
+            <li class="nav-item mb-2"><a href="./album_gallery.php" class="nav-link p-0 text-body-secondary">Sell a
                 car</a>
             </li>
           </ul>

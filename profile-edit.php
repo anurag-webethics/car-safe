@@ -16,7 +16,7 @@ include('../partials/hero_banner.php');
         <div class="d-flex profile-edit justify-content-between align-items-center flex-wrap py-5">
             <div class="d-flex profile-name gap-4 align-items-center flex-wrap ">
                 <div class=" profile-form-img text-center">
-                    <img src="../assets/images/profile-images/<?php echo $userProfileImg['profile_img']; ?>" alt="" width="100%" class="rounded-circle">
+                    <img src="../assets/images/profile-images/<?php echo $userDetail['profile_img']; ?>" alt="" width="100%" class="rounded-circle">
                 </div>
                 <div class="">
                     <h5 class="text-dark fw-bold"><?php echo $userDetail['fname'] . $userDetail['lname']; ?></h5>

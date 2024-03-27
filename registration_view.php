@@ -11,7 +11,6 @@ $title = 'Registration Page';
 include('../partials/header.php') 
 ?>
 
-
 <body>
 
 
