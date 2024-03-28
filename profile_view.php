@@ -11,8 +11,8 @@ include('./partials/indexheader.php');
 
 include('./partials/hero-banner.php');
 
-$userProfileImg = getUserProfileImg($conn);
-// dd($userProfileImg);
+// dd($userDetail);
+
 ?>
 
 <!-- upload data  -->

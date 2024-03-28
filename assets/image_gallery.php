@@ -5,7 +5,7 @@ include('./controller/helper.php');
 $albumImages = getAlbumImages($conn, $_GET['album_id']);
 ?>
 
-<?php include('./partials/indexheader.php') ?>
+<?php include('./partials/header.php') ?>
 
 <?php include('./partials/hero_banner.php') ?>
 
@@ -36,4 +36,4 @@ $albumImages = getAlbumImages($conn, $_GET['album_id']);
 <!-- Album -->
 
 
-<?php include('./partials/indexfooter.php') ?>
+<?php include('./partials/footer.php') ?>

@@ -30,10 +30,10 @@ SET time_zone = "+00:00";
 CREATE TABLE `album` (
   `id` int NOT NULL,
   `user_id` int NOT NULL,
-  `album_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `album_name` varchar(50)  NOT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `album_cover` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 --
 -- Dumping data for table `album`
@@ -55,10 +55,10 @@ INSERT INTO `album` (`id`, `user_id`, `album_name`, `created_at`, `album_cover`)
 CREATE TABLE `images` (
   `id` int NOT NULL,
   `user_id` int NOT NULL,
-  `images` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `images` varchar(500) DEFAULT NULL,
   `create_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `album_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 --
 -- Dumping data for table `images`
@@ -86,13 +86,13 @@ CREATE TABLE `users` (
   `fname` varchar(30) NOT NULL,
   `lname` varchar(30) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `password` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `password` varchar(250) NOT NULL,
   `country` varchar(40) NOT NULL,
   `gender` varchar(10) NOT NULL,
-  `hobbies` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `hobbies` varchar(100) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `profile_img` varchar(500) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Dumping data for table `users`

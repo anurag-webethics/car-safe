@@ -2,10 +2,18 @@
 
 include('../config/db.php');
 
+$error = '';
+
+if (isset($_POST['upload'])) {
+  if (empty($_POST['album_images'])) {
+    $error = 'Please select the image';
+  }
+}
+
 $user_Id = $_SESSION['userId'];
 $album_id = $_GET['album_id'];
 try {
-  if ($_FILES['album_image']['name'][0] > 0) {
+  if (!empty($_FILES['album_image']['name'][0])) {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $fileCount = count($_FILES['album_image']['name']);
       // dd($_FILES['album_image']['name'][0]);
