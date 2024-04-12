@@ -12,6 +12,7 @@ $userDetail = getUserDetails($conn);
 $updateUserId = $_SESSION['userId'];
 
 try {
+
   if (isset($_POST['update'])) {
     if (!empty($_FILES['profileImg']['name'])) {
       $fileName = $_FILES['profileImg']['name'];
@@ -54,7 +55,7 @@ if (isset($_POST['update'])) {
   $sql = "UPDATE users SET fname ='$updateFirstName', lname= '$updateLastName', country= '$updateCountry', gender = '$updateGender', hobbies = '$updateHobbies' WHERE id = '$updateUserId' ";
 
   if (mysqli_query($conn, $sql)) {
-    header("Location:../profile_view.php");
+    header("Location:../profile-view.php");
   }
 
   mysqli_close($conn);

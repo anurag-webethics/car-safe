@@ -22,7 +22,7 @@
             <li class="nav-item mb-2"><a href="../controller/images.php" class="nav-link p-0 text-body-secondary">Buy a
                 car</a>
             </li>
-            <li class="nav-item mb-2"><a href="./album_gallery.php" class="nav-link p-0 text-body-secondary">Sell a
+            <li class="nav-item mb-2"><a href="./album-gallery.php" class="nav-link p-0 text-body-secondary">Sell a
                 car</a>
             </li>
           </ul>

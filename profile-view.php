@@ -23,7 +23,7 @@ include('./partials/hero-banner.php');
 
         <div class="col-sm-6 col-md-12 col-lg-5 mb-3 mb-sm-0 detail-row">
             <div class="card bg-body-tertiary d-flex justify-content-center align-items-center py-5 h-100">
-                <img src="./assets/images/profile-images/<?php echo $userDetail['profile_img']; ?>" alt="" class="rounded-circle" width="40%">
+                <img src="./assets/images/<?php echo (isset($userDetail['profile_img'])) ? 'profile-images/'.$userDetail['profile_img'] : 'default.jpg'; ?>" alt="" class="rounded-circle" width="40%">
                 <div class="card-body text-center">
                     <h2 class="text-dark fw-semibold"><?php echo $userDetail['fname'] . $userDetail['lname'] ?></h2>
                     <p class="fw-bold fs-5">Email- <?php echo $userDetail['email'] ?></p>
@@ -34,7 +34,7 @@ include('./partials/hero-banner.php');
                 </div>
             </div>
         </div>
-
+    
         <div class="col-sm-6 col-md-12 col-lg-7 detail-row">
             <div class="card bg-body-tertiary p-5 h-100">
                 <div class="row flex-wrap flex g-4">

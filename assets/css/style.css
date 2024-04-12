@@ -236,3 +236,9 @@
   input::placeholder {
     color: #000;
   }
+
+  .cross-close{
+    position: absolute;
+    left: 96%;
+    top: -10px;
+  }

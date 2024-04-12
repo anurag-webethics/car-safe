@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 28, 2024 at 12:23 PM
+-- Generation Time: Apr 12, 2024 at 01:29 PM
 -- Server version: 8.0.36-0ubuntu0.20.04.1
--- PHP Version: 8.3.4
+-- PHP Version: 8.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,7 +42,8 @@ CREATE TABLE `album` (
 INSERT INTO `album` (`id`, `user_id`, `album_name`, `created_at`, `album_cover`) VALUES
 (1, 1, 'BMW', '2024-03-28 11:20:02', 'Rectangle 516 (1).png'),
 (2, 1, 'audi', '2024-03-28 11:20:18', 'Rectangle 623.png'),
-(3, 2, 'Car', '2024-03-28 11:49:17', 'Rectangle 624.png');
+(3, 2, 'Car', '2024-03-28 11:49:17', 'Rectangle 624.png'),
+(4, 1, 'BMW', '2024-04-01 12:55:45', 'Rectangle 629.png');
 
 -- --------------------------------------------------------
 
@@ -63,26 +64,20 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`id`, `user_id`, `images`, `create_at`, `album_id`) VALUES
-(1, 1, 'Rectangle 516 (1).png', '2024-03-28 11:23:01', 1),
-(2, 1, 'Rectangle 516 (2).png', '2024-03-28 11:23:01', 1),
-(3, 1, 'Rectangle 623.png', '2024-03-28 11:23:01', 1),
-(4, 1, 'Rectangle 628.png', '2024-03-28 11:23:01', 1),
-(5, 1, 'Rectangle 630.png', '2024-03-28 11:23:01', 1),
-(6, 1, 'Rectangle 633.png', '2024-03-28 11:23:01', 1),
-(7, 1, 'Rectangle 516.png', '2024-03-28 11:26:44', 2),
-(8, 1, 'Rectangle 629.png', '2024-03-28 11:26:44', 2),
-(9, 1, 'Rectangle 630.png', '2024-03-28 11:26:44', 2),
-(10, 1, 'Rectangle 631.png', '2024-03-28 11:26:44', 2),
-(11, 1, 'Rectangle 632.png', '2024-03-28 11:26:44', 2),
-(12, 1, 'Rectangle 625.png', '2024-03-28 11:40:13', 2),
-(13, 1, 'Rectangle 516.png', '2024-03-28 11:44:24', 2),
-(14, 2, 'Rectangle 623.png', '2024-03-28 11:49:52', 3),
-(15, 2, 'Rectangle 624.png', '2024-03-28 11:49:52', 3),
-(16, 2, 'Rectangle 625.png', '2024-03-28 11:49:52', 3),
-(17, 2, 'Rectangle 628.png', '2024-03-28 11:49:52', 3),
-(18, 2, 'Rectangle 628.png', '2024-03-28 12:07:13', 3),
-(19, 2, 'Rectangle 625.png', '2024-03-28 12:07:25', 3),
-(20, 2, 'Rectangle 624.png', '2024-03-28 12:17:34', 3);
+(76, 1, 'Rectangle 625.png', '2024-04-01 10:56:26', 2),
+(78, 1, 'Rectangle 629.png', '2024-04-01 10:56:26', 2),
+(87, 1, 'Rectangle 516 (2).png1711949880', '2024-04-01 11:08:00', 2),
+(122, 1, 'Rectangle 629.png1711955832', '2024-04-01 12:47:12', 2),
+(123, 1, 'Rectangle 630.png1711955832', '2024-04-01 12:47:12', 2),
+(124, 1, 'Rectangle 631.png1711955832', '2024-04-01 12:47:12', 2),
+(125, 1, 'Rectangle 632.png1711955832', '2024-04-01 12:47:12', 2),
+(131, 1, 'Rectangle 625.png1711955857', '2024-04-01 12:47:37', 1),
+(132, 1, 'Rectangle 628.png1711955857', '2024-04-01 12:47:37', 1),
+(133, 1, 'Rectangle 629.png1711955857', '2024-04-01 12:47:37', 1),
+(134, 1, 'Rectangle 630.png1711955857', '2024-04-01 12:47:37', 1),
+(138, 1, 'Rectangle 623.png1711956356', '2024-04-01 12:55:56', 4),
+(139, 1, 'Rectangle 624.png1711956356', '2024-04-01 12:55:56', 4),
+(140, 1, 'Rectangle 625.png1711956356', '2024-04-01 12:55:56', 4);
 
 -- --------------------------------------------------------
 
@@ -109,7 +104,10 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `fname`, `lname`, `email`, `password`, `country`, `gender`, `hobbies`, `created_at`, `profile_img`) VALUES
 (1, 'Anurag', 'Thakur', 'anuragthakur123@gmail.com', '$2y$10$5.kHluji3ot9Mo09Z/OcSeyXnzhVYBGZFNfOav3v0LyNder4lxrNS', 'India', 'male', 'Listening to music,Watching to movies', '2024-03-28 05:45:54', 'boy.png'),
-(2, 'Yardley', 'Chambers', 'karan123@gmail.com', '$2y$10$BPdW.UHbGbuaNC64g8z/POJLw4nudWJt3OosIeN/iuM6FgzESRAma', 'India', 'male', 'Listening to music,Dancing,Watching to movies,Singing', '2024-03-28 06:18:41', 'Rectangle 620.png');
+(2, 'Yardley', 'Chambers', 'karan123@gmail.com', '$2y$10$BPdW.UHbGbuaNC64g8z/POJLw4nudWJt3OosIeN/iuM6FgzESRAma', 'India', 'male', 'Listening to music,Dancing,Watching to movies,Singing', '2024-03-28 06:18:41', 'Rectangle 620.png'),
+(3, 'Ivan', 'Jones', 'mozyze@mailinator.com', '$2y$10$g51GtkH6Omrp/71OD5xY8.noevm06Decxj5me5zme/OGLIJaZweR2', 'Sri Lanka', 'female', 'Listening to music,Watching to movies,Singing', '2024-03-29 10:28:36', NULL),
+(4, 'Louis', 'Mccoy', 'hocupidezy@mailinator.com', '$2y$10$pHs04S3umcFiO/7CiGEeuOm47GJCSYULA6AkXAV9LI3skSo91V5Ru', 'Pakistan', 'male', 'Listening to music,Dancing,Watching to movies,Singing', '2024-04-01 07:29:01', 'boy.png'),
+(5, 'Hector', 'Nixon', 'bybuqiwy@mailinator.com', '$2y$10$b/gBHyGD/tBhOJSygRV/KenNnbhBvQ.LW4fuknIpqVeCuUsVbFFY2', 'Sri Lanka', 'female', 'Dancing', '2024-04-01 07:48:01', 'default.jpg');
 
 --
 -- Indexes for dumped tables
@@ -144,19 +142,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `album`
 --
 ALTER TABLE `album`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=141;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables

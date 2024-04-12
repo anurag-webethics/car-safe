@@ -17,10 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   try {
     $sql = "INSERT INTO album (user_id,album_name,album_cover) VALUES ('$userID','$album_name','$album_image')";
     mysqli_query($conn, $sql);
-    header("Location:../album_gallery.php");
+    header("Location:../album-gallery.php");
   } catch (Exception $e) {
     die("Error : <br />" . $e->getMessage());
   }
 }
 
-include("../album_view.php");
+include("../album-view.php");

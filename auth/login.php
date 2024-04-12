@@ -50,4 +50,4 @@ function test_input($data)
   $data = htmlspecialchars($data);
 }
 
-include("../login_view.php");
+include("../login-view.php");

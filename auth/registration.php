@@ -34,4 +34,4 @@ if (
 
 $countryArr = ['India', 'U.S.A', 'China', 'Sri Lanka', 'Pakistan', 'South Korea'];
 
-include("../registration_view.php");
+include("../registration-view.php");

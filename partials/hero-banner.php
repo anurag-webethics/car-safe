@@ -31,11 +31,11 @@
                     dapibus sit nullam. Vel, facilisi interdum morbi id. </p>
                 <div class="profile-btn-group d-flex gap-3" role="group" aria-label="Basic example">
                    <?php if(!empty($_SESSION['email'])){ ?>
-                    <button type="button" class="btn btn1 btn-primary border-0 fw-semibold rounded-0 btn-box" onclick="window.location.href = './profile_view.php'">
+                    <button type="button" class="btn btn1 btn-primary border-0 fw-semibold rounded-0 btn-box" onclick="window.location.href = './profile-view.php'">
                         Profile
                     </button>
                     <?php } ?>
-                    <button type="button" class="btn btn1 btn-light text-primary rounded-0 border-2 fw-bold border border-primary btn-box1" onclick="window.location.href = './album_gallery.php'">Album</button>
+                    <button type="button" class="btn btn1 btn-light text-primary rounded-0 border-2 fw-bold border border-primary btn-box1" onclick="window.location.href = './album-gallery.php'">Album</button>
                     <?php if(!empty($_SESSION['email'])){ ?>
                    <button type="button" class="btn btn-light rounded-0 text-primary fw-bold border-2 border border-primary btn-box1" onclick="window.location.href = './auth/logout.php'">Logout</button>
                     <?php } ?>

@@ -42,7 +42,7 @@
           <?php } ?>
 
           <?php if (!empty($_SESSION['email'])) { ?>
-            <a href="./profile_view.php" class="link-light link-offset-2 link-underline-opacity-0"><button type="button" class="btn rounded-0 text-white profile nav-btn"><i class="fa-solid fa-user" style="color: #ffffff;"></i> Profile</button></a>
+            <a href="./profile-view.php" class="link-light link-offset-2 link-underline-opacity-0"><button type="button" class="btn rounded-0 text-white profile nav-btn"><i class="fa-solid fa-user" style="color: #ffffff;"></i> Profile</button></a>
             <a href="./auth/logout.php" class="link-light link-offset-2 link-underline-opacity-0"><button type="button" class="btn rounded-0 text-white login nav-btn">Logout</button></a>
           <?php } ?>
 
@@ -56,9 +56,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
   <script>
-    if(window.location.href == 'http://car.check.in/' || window.location.href == 'http://car.check.in/index.php' ){
-     let nav =  document.querySelector('nav');
+    if (window.location.href == 'http://car.check.in/' || window.location.href == 'http://car.check.in/index.php') {
+      let nav = document.querySelector('nav');
       nav.classList.remove('bg-dark');
     }
   </script>
-

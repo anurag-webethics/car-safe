@@ -2,6 +2,7 @@
 session_start();
 $title = 'Car Safe';
 ?>
+ <link rel="shortcut icon" href="./assets/images/Group 46.png" type="image/x-icon">
 <div class="home">
     <?php include('./partials/indexheader.php') ?>
 

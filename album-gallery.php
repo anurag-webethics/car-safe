@@ -25,10 +25,9 @@ include('./partials/hero-banner.php');
         <div class="row g-5">
             <?php while ($row = mysqli_fetch_assoc($userAlbum)) {  ?>
                 <div class="col-sm-6 mb-3  col-md-6 col-lg-4 mb-sm-0">
-                    <a href="./image_gallery.php?album_id=<?php echo $row['id']; ?>" class="link-light link-offset-2 link-underline-opacity-0">
+                    <a href="./image-gallery.php?album_id=<?php echo $row['id']; ?>" class="link-light link-offset-2 link-underline-opacity-0">
                         <div class="card border-0">
                             <img src="<?= (!empty($row['album_cover'])) ? './assets/images/album-images/' . $row['album_cover'] : './assets/images/album-images/404.jpg' ?>" alt="...">
-
                             <div class="card-body text-center">
                                 <h3 class="card-title pt-3 fw-bold"><?php echo $row['album_name']; ?></h3>
                             </div>
