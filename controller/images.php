@@ -28,8 +28,8 @@ try {
 
         $sql = "INSERT INTO images (user_id,images,album_id) VALUES ('$user_Id', '$imageName' , '$album_id')";
         mysqli_query($conn, $sql);
-        header("Location:../image-gallery.php?album_id=" . $album_id);
       }
+      header("Location:../image-gallery.php?album_id=" . $album_id);
     }
   }
 } catch (\Exception $e) {
